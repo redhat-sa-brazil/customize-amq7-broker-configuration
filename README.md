@@ -28,7 +28,7 @@ The following is intended to showcase how to customize **Red Hat AMQ 7** configu
   
  * Create a [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/) with all **Red Hat AMQ** files, or if you prefer, just create the ones that you want to customize. Example:
 
-  ```
+    ```
     Option 1 - Individual ConfigMap for each file
     oc create configmap artemis-users \
       --from-file=artemis-users.properties
@@ -45,7 +45,7 @@ The following is intended to showcase how to customize **Red Hat AMQ 7** configu
       --from-file=logging.properties=logging.properties \
       --from-file=login.config=login.config \
       --from-file=management.xml=management.xml
-  ```
+    ```
   
 * Finally apply your [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/) on **Red Hat AMQ**:
 
